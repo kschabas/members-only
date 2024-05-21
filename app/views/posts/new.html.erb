@@ -1,6 +1,6 @@
 <%= form_with model: @post do |form| %>
 
-  <%= form.hidden_field :user_id, value: "1" %>
+  <%= form.hidden_field :user_id, value: current_user.id %>
   <div>
     <%= form.label :title %><br>
     <%= form.text_field :title %>
